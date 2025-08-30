@@ -1,0 +1,36 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(110, 110, 110);
+}
+
+h1
+{
+    color: rgb(99, 99, 99);
+}
+
+{
+    .container {
+        width: 100%;
+        overflow: hidden;  /* Limpa o fluxo dos elementos flutuantes */
+      }
+      
+      .main {
+        width: 70%;
+        float: left;  /* Flutua à esquerda */
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      
+      .sidebar {
+        width: 30%;
+        float: right;  /* Flutua à direita */
+        padding: 20px;
+        background-color: #d0d0d0;
+      }
+      
+      .container::after {
+        content: "";
+        display: table;
+        clear: both; /* Limpa os floats */
+      }
+}
