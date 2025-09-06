@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: aquamarine;
+    display: flex;
+    height: 100vh;
+}
+
+.login-content, .banner-content{
+    width: 50%;
+}
+
+.login-content{
+    background-color: antiquewhite;
+}
+
+.banner-content{
+    display: flex;
+    background-color: maroon;
+    justify-content: center
+
+}
+
+.banner-content img{
+    display: ;
+    width: ;
+}
