@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+    background-color: #dddd;
+    margin-top: 20px;
+    border-radius: 6px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    background-color: #fff;
+    margin-bottom: 2px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+
+}
+
+.item-glow-blue{
+    background-color: blue;
+    
+}
+
+.item-glow-green{
+    background-color: green;
+}
+
+.item-glow-red{
+    background-color: red;
+}
+
+.item-glow-yellow{
+    background-color: yellow;
+}
+
+.item-shrink-blue{
+    background-color: blue;
+   
+}
+
+.item-shrink-green{
+    background-color: green;
+}
+
+.item-shrink-red{
+    background-color: red;
+}
+
+.item-shrink-yellow{
+    background-color: yellow;
+}
+
+.item-basis-blue{
+    background-color: blue;
+   
+}
+
+.item-basis-green{
+    background-color: green;
+}
+
+.item-basis-red{
+    background-color: red;
+}
+
+.item-basis-yellow{
+    background-color: yellow;
+}
+
+
+
+.align-self{
+    height: 500px;
+}
+
+
+.item-align-self-blue{
+    background-color: blue;
+    align-self: flex-start;
+   
+   
+}
+
+.item-align-self-green{
+    background-color: green;
+    align-self: flex-end;
+}
+
+.item-align-self-red{
+    background-color: red;
+    align-self: center;
+}
+
+.item-align-self-yellow{
+    background-color: yellow;
+ }
+
+ .item-align-self-pink{
+    background-color: pink;
+ }
+
+ .item-align-self-orange{
+    background-color: orange;
+ }
+
+ .item:first-child {
+    order: 2;
+}
+
+.item:last-child {
+    order: -1;
+}
