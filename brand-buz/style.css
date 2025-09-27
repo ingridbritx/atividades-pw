@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #e85f19;
+  --secondary-color: #ee8a56;
+  --dark-color: #262627;
+  --info-color: #5d5d5d;
+  --light-color: #f8f9fc;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+header img {
+  height: 40px;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a {
+  color: var(--dark-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: var(--primary-color);
+}
+
+.botão-signup {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(232, 95, 25, 0.3);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.botão-signup:hover {
+  background: var(--secondary-color);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: url("https://github.com/alessandrovitorio/brand-buz/blob/main/assets/images/bg.png?raw=true")
+    no-repeat right center;
+  background-size: contain;
+}
+
+.hero .text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  color: var(--dark-color);
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.hero p {
+  color: var(--info-color);
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(232, 95, 25, 0.3);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.botão-primary:hover {
+  background: var(--secondary-color);
+}
+
+.cta {
+    margin-bottom: 25px; /* separação do botão para o explore */
+  }
+  
+  .link-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-color);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .link-explore i {
+    color: var(--primary-color);
+    font-size: 22px;
+  }
+  
+
+/* BANNER IMG */
+.banner img {
+  width: 500px;
+}
