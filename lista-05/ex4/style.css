@@ -3,4 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+/* Container para as colunas ficarem lado a lado */
+.container {
+  display: flex;           /* Coloca as divs em linha */
+  gap: 20px;               /* Espaço entre as colunas */
+  margin: 20px;
+}
+
+/* Estilo das colunas */
+.coluna {
+  flex: 1;                 /* Cada coluna ocupa metade da largura */
+  border: 2px solid black; /* Borda em volta */
+  padding: 15px;           /* Espaço interno */
+  background-color: #f9f9f9;
 }
