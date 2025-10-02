@@ -5,3 +5,21 @@
   box-sizing: border-box;
 }
 
+/* Estado normal (link não visitado) */
+a {
+  color: blue;
+  text-decoration: none; /* tira o sublinhado */
+}
+
+/* Quando o mouse passa em cima */
+a:hover {
+  color: red;
+  text-decoration: underline; /* sublinha no hover */
+}
+
+/* Depois de visitado */
+a:visited {
+  color: purple;
+}
+
+
