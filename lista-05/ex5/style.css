@@ -3,4 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+.caixa {
+  border: 2px solid black;   /* Borda para visualizar melhor */
+  background-color: lightgray;
+
+  margin: 30px;   /* Espaço externo: distância da div para os outros elementos */
+  padding: 20px;  /* Espaço interno: distância entre o texto e a borda */
 }
