@@ -1,0 +1,91 @@
+/* /css/form.css */
+
+/* ------------------ ESTILOS GERAIS DE FORMULÁRIO ------------------ */
+
+/* Centraliza o corpo e o formulário */
+.body-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: var(--cor-fundo-escuro); 
+    padding: var(--espacamento-medio);
+}
+
+.main-form {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 400px; 
+    width: 100%;
+    text-align: center;
+}
+
+.form-title {
+    font-size: var(--tamanho-titulo-2);
+    color: var(--cor-primaria);
+    margin-bottom: var(--espacamento-minimo);
+}
+
+.form-subtitle {
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    margin-bottom: var(--espacamento-medio);
+}
+
+.form-card {
+    background-color: var(--cor-fundo-claro);
+    padding: var(--espacamento-medio);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    margin-bottom: var(--espacamento-pequeno);
+}
+
+.form-group {
+    margin-bottom: var(--espacamento-pequeno);
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--cor-texto-principal);
+}
+
+.form-group input {
+    width: 100%;
+    padding: var(--espacamento-minimo);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: var(--tamanho-texto-base);
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: var(--espacamento-pequeno);
+    font-size: 1.1rem;
+}
+
+.form-footer-text {
+    font-size: 0.9rem;
+    color: var(--cor-texto-principal);
+}
+
+.form-footer-text a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+}

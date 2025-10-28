@@ -1,0 +1,28 @@
+/* /css/variables.css 
+
+    *Atenção: Substitua estes valores genéricos pelos valores exatos do seu mockup!*
+*/
+:root {
+    /* Cores */
+    --cor-primaria: #007bff;        /* Ex: Azul - Destaque Principal */
+    --cor-secundaria: #ffc107;      /* Ex: Amarelo - Alertas/Ícones */
+    --cor-fundo-claro: #ffffff;     /* Ex: Fundo de Seções Brancas */
+    --cor-fundo-escuro: #f8f9fa;    /* Ex: Fundo da Página (Body) */
+    --cor-texto-principal: #343a40; 
+    --cor-texto-claro: #ffffff;
+
+    /* Tipografia */
+    --fonte-principal: 'Arial', sans-serif; 
+    --tamanho-titulo-1: 2.5rem; 
+    --tamanho-titulo-2: 2rem;   
+    --tamanho-texto-base: 1rem; 
+
+    /* Espaçamentos */
+    --espacamento-minimo: 0.5rem; 
+    --espacamento-pequeno: 1rem;    
+    --espacamento-medio: 2rem;      
+    --espacamento-grande: 4rem;     
+
+    /* Larguras */
+    --largura-maxima-conteudo: 1100px;
+}
