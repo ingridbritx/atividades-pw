@@ -1,0 +1,160 @@
+/* reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #0b0219;
+  color: #fff;
+}
+
+/* ===== Cabeçalho com menu central e botão à direita ===== */
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | nav | botão */
+  align-items: center;
+  gap: 20px;
+  padding: 20px 60px;
+}
+.logo { width: 120px; }
+
+.nav {
+  justify-self: center;
+  display: flex;
+  gap: 40px;
+}
+.nav a {
+  color: #e9e9e9;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity .2s, transform .2s;
+}
+.nav a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* Botão do cabeçalho (outline claro com seta) */
+.btn-signup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #fff;
+  color: #1a0d33;
+  font-weight: 600;
+  text-decoration: none; 
+}
+
+.btn-signup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255,255,255,.2);
+  background: #f7f7ff;
+}
+
+
+/* ===== Seção principal (usa grid) ===== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* texto + imagem */
+  align-items: center;
+  gap: 40px;
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  background: radial-gradient(1200px 600px at 20% 20%, #2f165c 0%, #1b0b38 45%, #16062e 100%);
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,.45);
+}
+
+/* coluna de texto (usa flex) */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* selo  */
+.tag {
+  background: #b6a7ff;
+  color: #1a0d33;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  width: fit-content;
+  font-weight: 600;
+  opacity: .95;
+}
+
+/* título e parágrafo */
+.text-content h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  letter-spacing: .2px;
+}
+.text-content p {
+  color: #cfcfcf;
+  max-width: 460px;
+  line-height: 1.7;
+}
+
+/* ===== Botão da hero ===== */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #1a0d33;
+  border-radius: 999px;
+  padding: 10px 12px 10px 20px; /* espaço extra à esquerda */
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+}
+.btn-cta .label { line-height: 1; }
+.btn-cta .bubble {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #23103f;  /* bolha escura */
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  background: #f7f7ff;
+}
+
+/* ===== imagem lateral ===== */
+.image-content {
+  display: flex;
+  justify-content: center;
+}
+.image-content img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 32px;               
+  object-fit: cover;
+
+}
+
+/* ===== responsividade ===== */
+@media (max-width: 900px) {
+  .header { grid-template-columns: auto auto; grid-auto-flow: row; }
+  .nav { justify-self: start; gap: 24px; order: 3; margin-top: 10px; }
+  .btn-signup { justify-self: end; }
+  
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px;
+  }
+  .text-content { align-items: center; }
+  .text-content p { max-width: 520px; }
+  .image-content img { max-width: 320px; }
+}
