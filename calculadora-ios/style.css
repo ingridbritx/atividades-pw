@@ -1,0 +1,99 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  /* cores principais da calculadora iOS */
+  --bg: #000;
+  --btn-dark: #333;
+  --btn-fn: #a5a5a5;
+  --btn-op: #ff9f0a;
+  --text-light: #fff;
+  --text-dark: #000;
+}
+
+/* remove margens e define o comportamento das caixas */
+* {
+  box-sizing: border-box;
+}
+
+/* centraliza a calculadora na tela e aplica o fundo preto */
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* estrutura principal da calculadora */
+.calculator {
+  width: 320px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+/* área do display onde aparecem os números */
+.display {
+  color: var(--text-light);
+  font-size: 4rem;
+  text-align: right;
+  padding: 20px;
+  font-weight: 300;
+}
+
+/* define o grid dos botões: 4 colunas */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* estilo padrão dos botões numéricos */
+.key {
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-light);
+  background: var(--btn-dark);
+  transition: 0.2s;
+}
+
+/* efeito ao passar o mouse */
+.key:hover {
+  filter: brightness(1.2);
+}
+
+/* botões de função (AC, +/-, %) */
+.fn {
+  background: var(--btn-fn);
+  color: var(--text-dark);
+}
+
+/* botões de operação (÷, ×, −, +, =) */
+.op {
+  background: var(--btn-op);
+  color: var(--text-light);
+}
+
+/* botão 0 ocupa duas colunas e tem formato oval */
+.zero {
+  grid-column: 1 / span 2;
+  border-radius: 35px;
+  justify-content: flex-start;
+  padding-left: 28px;
+  width: auto;
+}
