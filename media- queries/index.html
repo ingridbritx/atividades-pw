@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 2rem;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            gap: 2rem;
+
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            text-align: center;
+        }
+
+        @media(min-width:720px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: aquamarine;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+            .card{
+                width: 70%;
+                background-color: #fff;
+            }
+        }
+
+        @media(min-width:1024px){
+            .container{
+                  grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media(prefers-color-scheme: dark) {
+            .container {
+                background-color: #333;
+
+            }
+
+            .card {
+                background-color: #555;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="card">
+            <h1>Meu cartão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio delectus necessitatibus nostrum enim,
+                magnam voluptatibus voluptas perspiciatis beatae praesentium, amet culpa rerum sint itaque facere
+                explicabo eum optio quasi.</p>
+        </div>
+        <div class="card">
+            <h1>Meu cartão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio delectus necessitatibus nostrum enim,
+                magnam voluptatibus voluptas perspiciatis beatae praesentium, amet culpa rerum sint itaque facere
+                explicabo eum optio quasi.</p>
+        </div>
+        <div class="card">
+            <h1>Meu cartão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio delectus necessitatibus nostrum enim,
+                magnam voluptatibus voluptas perspiciatis beatae praesentium, amet culpa rerum sint itaque facere
+                explicabo eum optio quasi.</p>
+        </div>
+        <div class="card">
+            <h1>Meu cartão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio delectus necessitatibus nostrum enim,
+                magnam voluptatibus voluptas perspiciatis beatae praesentium, amet culpa rerum sint itaque facere
+                explicabo eum optio quasi.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="card"> 
+        <h1>Meu cartão</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi non incidunt, obcaecati dignissimos quas fuga dolorem mollitia expedita perspiciatis, vitae, vel velit earum nam quia eveniet doloremque quod voluptates assumenda.</p>
+    </div>
+
+    <div class="card"> 
+        <h1>Meu cartão</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi non incidunt, obcaecati dignissimos quas fuga dolorem mollitia expedita perspiciatis, vitae, vel velit earum nam quia eveniet doloremque quod voluptates assumenda.</p>
+    </div>
+
+    <div class="card"> 
+        <h1>Meu cartão</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi non incidunt, obcaecati dignissimos quas fuga dolorem mollitia expedita perspiciatis, vitae, vel velit earum nam quia eveniet doloremque quod voluptates assumenda.</p>
+    </div>
+
+    </div>
+    
+</body>
+</html>
