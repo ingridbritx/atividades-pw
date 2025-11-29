@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* ===== Fonte  ===== */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 40px;
+    color: #212121;
+}
+
+/* ===== Títulos ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #483474;
+}
+
+h3 {
+    color: #3e4674;
+    font-weight: 600;
+}
+
+/* ===== Abas ===== */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab {
+    padding: 10px 22px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 2px solid #483877;
+    background: transparent;
+    color: #483877;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    background: #644da5;
+    color: white;
+}
+
+.tab.active {
+    background: #ff0067;
+    border-color: #c20853;
+    color: white;
+}
+
+/* ===== Conteúdo ===== */
+.content {
+    display: none;
+    animation: fade .3s ease-in-out;
+}
+
+.content.active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== Cards ===== */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    width: clamp(180px, 45%, 260px);
+    padding: 18px;
+    border-left: 6px solid #ff0067;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-left-color: #b9104f;
+    transform: translateY(-4px);
+}
+
+small {
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+    color: #3e4674;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 600px) {
+    .tabs {
+        flex-wrap: wrap;
+    }
+}
