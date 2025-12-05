@@ -1,0 +1,77 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: #f3f4f6;
+    color: #212121;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTAINER */
+.docentes-section {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Título */
+.docentes-section h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #483474;
+    margin-bottom: 20px;
+}
+
+/* Texto inicial */
+.docentes-section .intro {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+/* Lista */
+.docentes-lista {
+    border-top: 1px solid #d6d6d6;
+}
+
+/* Cada linha */
+.linha-prof {
+    padding: 12px 4px;
+    border-bottom: 1px solid #d6d6d6;
+    transition: background 0.2s ease;
+}
+
+.linha-prof:hover {
+    background: #ffffff;
+}
+
+/* Nome */
+.prof-nome {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #202120;
+    margin-bottom: 2px;
+}
+
+/* Disciplinas */
+.prof-disc {
+    font-size: 14px;
+    color: #3e4674;
+    line-height: 1.3;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    body { padding: 16px; }
+}
